@@ -1,9 +1,11 @@
-name: hello varsha
-on: 
+name: varsha
+on:
  push:
- jobs:
-  hello:
+   branches:
+     - main
+jobs:
+ build:
    runs-on: ubuntu-latest
    steps:
-    - name: Print hello message
-    run: echo "hello varsha" 
+     - name: Run a Simple Command
+       run: echo "Hello, GitHub Actions!This is varsha"
